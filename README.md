@@ -1,2 +1,8 @@
 # puppet-kafo
-Puppet module for setting up Kafo build environment
+
+A puppet module for setting up Kafo:
+
+* https://github.com/theforeman/kafo
+
+Vagrant can be used to create a virtual machine with correctly configured Kafo 
+environment.

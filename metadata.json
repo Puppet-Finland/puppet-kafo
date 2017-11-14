@@ -1,0 +1,10 @@
+{
+  "name": "puppetfinland-kafo",
+  "version": "1.0.0",
+  "author": "Puppet-Finland team",
+  "license": "BSD license",
+  "summary": "Setup Kafo",
+  "source": "https://github.com/Puppet-Finland/puppet-kafo.git",
+  "project_page": "https://github.com/Puppet-Finland/puppet-kafo",
+  "dependencies": [ ]
+}
