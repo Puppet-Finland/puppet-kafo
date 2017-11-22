@@ -7,7 +7,7 @@ Vagrant.configure("2") do |config|
     box.vm.box = "debian/stretch64"
     box.vm.box_version = "9.2.0"
     box.vm.hostname = "kafo.local"
-    box.vm.network "private_network", ip: "192.168.248.101"
+    box.vm.network "private_network", ip: "192.168.221.101"
     box.vm.provision "shell", path: "vagrant/prepare.sh"
     box.vm.provision "shell", path: "vagrant/apply.sh"
     box.vm.provider "virtualbox" do |vb|
