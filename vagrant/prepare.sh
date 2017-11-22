@@ -4,5 +4,6 @@
 #
 apt-get -y install puppet git
 
-mkdir /tmp/modules
+mkdir -p /tmp/modules
+rm -f /tmp/modules/kafo
 ln -s /vagrant /tmp/modules/kafo
