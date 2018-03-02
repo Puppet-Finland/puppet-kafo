@@ -8,6 +8,7 @@ Vagrant.configure("2") do |config|
     box.vm.box_version = "9.2.0"
     box.vm.hostname = "kafo.local"
     box.vm.network "private_network", ip: "192.168.221.101"
+    box.vm.synced_folder ".", "/vagrant", type: "virtualbox"
     box.vm.provision "shell" do |s|
       s.path = "vagrant/prepare.sh"
       s.args = ["-n", "kafo", "-f", "debian", "-o", "stretch", "-b", "/home/vagrant"]
