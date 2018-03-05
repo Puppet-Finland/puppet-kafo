@@ -20,6 +20,14 @@ class kafo
         ensure => 'present',
     }
 
+    # We need to use a stable version of Highline module or kafo installers
+    # won't work
+    package { 'highline':
+        ensure   => 'present',
+        version  => '1.7.10',
+        provider => $gem_provider,
+    }
+
     $gems = [ 'kafo', 'rdoc', 'yard', 'puppet-strings', 'librarian-puppet' ]
 
     package { $gems:
