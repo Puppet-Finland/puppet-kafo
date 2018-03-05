@@ -23,8 +23,7 @@ class kafo
     # We need to use a stable version of Highline module or kafo installers
     # won't work
     package { 'highline':
-        ensure   => 'present',
-        version  => '1.7.10',
+        ensure   => '1.7.10',
         provider => $gem_provider,
     }
 
